@@ -1,0 +1,21 @@
+{
+    "applications": [
+        {
+            "name": "blue",
+            "image": "hashicorp/http-echo",
+            "text": "\"I am blue\"",
+            "port": 8080,
+            "replicas": 2,
+            "host": "example.com"
+        },
+        {
+            "name": "green",
+            "image": "hashicorp/http-echo",
+            "text": "\"I am green\"",
+            "port": 8081,
+            "replicas": 3,
+            "host": "example.com",
+            "weight": 25
+        }
+    ]
+}
