@@ -17,9 +17,9 @@ This terraform script performs the following actions.
 ├── modules -- contains `nginx-ingress` module
 │   └── ingress-nginx
 │       ├── main.tf -- terraform script
-│       ├── variables.tf -- variables required to run the script
+|       └── variables.tf -- variables required to run the script
 ├── terraform.tfvars -- define variable values
-├── variables.tf -- variables required to run the script
+└── variables.tf -- variables required to run the script
  
 ## Deployment steps
 
@@ -50,7 +50,7 @@ kubectl config current-context
 terraform apply
 ```
 
-This will install `nginx ingress controller` and then deploy the app. Once the script run is successful run following command to verify the output.
+This will install `nginx ingress controller` and then deploy the app. Once the script run is successful, run the following command to verify the output.
 
 ```bash
 $ for i in {1..10};do curl https://<host_name>;  done
