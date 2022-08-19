@@ -96,7 +96,6 @@ resource "kubernetes_ingress_v1" "blue_green_ingress" {
   }
 
   spec {
-    ingress_class_name = "public-iks-k8s-nginx"
     rule {
       host = each.value.host
       http {
@@ -127,7 +126,6 @@ resource "kubernetes_ingress_v1" "blue_green_ingress_canary" {
   }
 
   spec {
-    ingress_class_name = "public-iks-k8s-nginx"
     rule {
       host = each.value.host
       http {
