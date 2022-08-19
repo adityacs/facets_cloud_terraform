@@ -10,6 +10,8 @@ This terraform script performs the following actions.
 **Note:** Couldn't find official terraform module for `minikube`. So, `minikube` setup is not automated. 
 
 ## Repo structure
+
+```
 .
 ├── README.md
 ├── application.json -- app related image, port, image values
@@ -20,7 +22,8 @@ This terraform script performs the following actions.
 |       └── variables.tf -- variables required to run the script
 ├── terraform.tfvars -- define variable values
 └── variables.tf -- variables required to run the script
- 
+```
+
 ## Deployment steps
 
 ### Pre-requistes
