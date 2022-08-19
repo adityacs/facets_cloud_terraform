@@ -6,7 +6,17 @@
             "text": "\"I am blue\"",
             "port": 8080,
             "replicas": 2,
-            "host": "example.com"
+            "host": "example.com",
+            "resources": {
+                "requests": {
+                    "cpu": "50m",
+                    "memory": "256Mi"
+                },
+                "limits": {
+                    "cpu": "500m",
+                    "memory": "512Mi"
+                }
+            }
         },
         {
             "name": "green",
@@ -15,7 +25,17 @@
             "port": 8081,
             "replicas": 3,
             "host": "example.com",
-            "weight": 25
+            "weight": 25,
+            "resources": {
+                "requests": {
+                    "cpu": "50m",
+                    "memory": "256Mi"
+                },
+                "limits": {
+                    "cpu": "500m",
+                    "memory": "512Mi"
+                }
+            }
         }
     ]
 }

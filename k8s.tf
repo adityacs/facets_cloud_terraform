@@ -57,12 +57,12 @@ resource "kubernetes_deployment" "blue_green" {
 
           resources {
             limits = {
-              cpu    = "0.5"
-              memory = "512Mi"
+              cpu    = each.value.resources.limits.cpu
+              memory = each.value.resources.limits.memory
             }
             requests = {
-              cpu    = "250m"
-              memory = "50Mi"
+              cpu    = each.value.resources.requests.cpu
+              memory = each.value.resources.requests.memory
             }
           }
         }
