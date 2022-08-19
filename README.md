@@ -17,7 +17,7 @@ This terraform script performs the following actions.
 ├── application.json -- app related image, port, image values
 ├── k8s.tf -- terraform script which includes `nginx ingress controller` installation and app deployment
 ├── modules -- contains `nginx-ingress` module
-│   └── ingress-nginx
+│   └── nginx-ingress
 │       ├── main.tf -- terraform script
 |       └── variables.tf -- variables required to run the script
 ├── terraform.tfvars -- define variable values
